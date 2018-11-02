@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vega-sdk-dotnet-demo", "Vega-sdk-dotnet\Vega-sdk-dotnet-demo.csproj", "{4E5BBF91-61FE-45FC-A5F3-426B1352C730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vega-sdk-dotnet-util", "Vega-sdk-dotnet-util\Vega-sdk-dotnet-util.csproj", "{6AE5F666-4712-43FE-B570-86461345CC39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E5BBF91-61FE-45FC-A5F3-426B1352C730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5BBF91-61FE-45FC-A5F3-426B1352C730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5BBF91-61FE-45FC-A5F3-426B1352C730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5BBF91-61FE-45FC-A5F3-426B1352C730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE5F666-4712-43FE-B570-86461345CC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE5F666-4712-43FE-B570-86461345CC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE5F666-4712-43FE-B570-86461345CC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE5F666-4712-43FE-B570-86461345CC39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
