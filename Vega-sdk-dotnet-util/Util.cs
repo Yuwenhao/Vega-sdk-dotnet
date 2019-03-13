@@ -22,6 +22,13 @@ namespace Vega_sdk_dotnet_util
 
         }
 
+        public static string GetSign(string verb_type, string timestamp, string CanonicalizedResource, string secretKey)
+        {
+            string stringtosign = verb_type + "\n" + timestamp + "\n" + CanonicalizedResource;
+            string sign = ToBase64hmac(stringtosign, secretKey);
+            return sign;
+        }
+
         public static string sendGet(string url, Dictionary<string, string> param)
         {
             //组合参数

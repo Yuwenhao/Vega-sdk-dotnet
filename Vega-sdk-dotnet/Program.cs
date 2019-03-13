@@ -15,8 +15,9 @@ namespace Vega_sdk_dotnet
             string http_verb = "GET";
             string CanonicalizedResource = "/v3/ems-cartype-service/v3/ems/adapter";
             long timestamp = Vega_sdk_dotnet_util.Util.ConvertDateTimeToInt(DateTime.Now);
-            string stringtosign = http_verb + "\n" + timestamp + "\n" + CanonicalizedResource;
-            string sign = Vega_sdk_dotnet_util.Util.ToBase64hmac(stringtosign, secretKey);
+            //string stringtosign = http_verb + "\n" + timestamp + "\n" + CanonicalizedResource;
+            //string sign = Vega_sdk_dotnet_util.Util.ToBase64hmac(stringtosign, secretKey);
+            string sign = Vega_sdk_dotnet_util.Util.GetSign(http_verb, timestamp.ToString(), CanonicalizedResource, secretKey);
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("g7timestamp", timestamp.ToString());
             param.Add("sign", sign);
